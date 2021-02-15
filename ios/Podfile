@@ -7,6 +7,7 @@ target 'Uyaphi' do
   config = use_native_modules!
 
   use_react_native!(:path => config["reactNativePath"])
+  pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
   # warn_for_unused_master_specs_repo => false
 
   target 'UyaphiTests' do
