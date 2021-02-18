@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#000000',
+        backgroundColor: '#F1A300',
         padding: 15,
         paddingTop: 20,
         borderTopLeftRadius: 27,
@@ -15,9 +15,10 @@ const styles = StyleSheet.create({
         marginBottom: 10,
     },
     text: {
-        color: '#ddd',
+        color: '#fff',
         fontSize: 15,
         marginBottom: 10,
+		fontWeight: "300",
     },
     learnMore: {
         color: '#fff',

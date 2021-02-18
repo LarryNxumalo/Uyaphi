@@ -4,8 +4,6 @@ const styles = StyleSheet.create({
     container: {
         padding: 10,
         height: '100%',
-		// alignItems: "center",
-		justifyContent: "space-around",
 		backgroundColor: '#07070A',
 		zIndex: 0,
 		borderTopRightRadius: 27,
@@ -18,16 +16,29 @@ const styles = StyleSheet.create({
 		},
 		shadowOpacity: 0.37,
 		shadowRadius: 7.49,
-
 		elevation: 124,
-			},
-
+	},
+	inputOne:{
+		position: "absolute",
+		top: 10,
+		width: "100%",
+		alignSelf: 'center',
+		zIndex: 9,
+	},
+	inputTwo:{
+		position: "absolute",
+		top: 65,
+		width: "100%",
+		alignSelf: 'center',
+		zIndex: 8,
+	},
     textInput: {
-		width: "90%",
+		// width: "90%",
 		fontSize: 15,
 		color: "#fff",
         backgroundColor: '#F1A300',
 		padding: 10,
+		paddingLeft: 70,
         marginVertical: 5,
         borderRadius: 27,
 		zIndex: 9,

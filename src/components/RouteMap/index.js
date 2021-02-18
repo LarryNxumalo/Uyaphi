@@ -3,7 +3,7 @@ import { Image } from "react-native";
 import MapView, {PROVIDER_GOOGLE, Marker} from 'react-native-maps';
 import cars from "../../assets/data/cars";
 
-const HomeMap = (props) => {
+const RouteMap = (props) => {
 
 	const getImage = (type) => {
 		if ( type === 'YaphiX'){
@@ -29,28 +29,9 @@ const HomeMap = (props) => {
 					latitudeDelta: 0.0922,
 					longitudeDelta: 0.0921,
 				}}>
-				{cars.map((car) => {
-					
-					<Marker
-						
-						key={car.id}
-						coordinate={{latitude: car.latitude,longitude: car.longitude
-					}}>
-						<Image
-							renderItem={car}
-							style={{
-								width: 700,
-								height: 70,
-								resizeMode: 'contain'
-							}}
-							source={getImage(car.type)}
-						/>
-					</Marker>
-				})}
-
 			</MapView>
 
     );
 };
 
-export default HomeMap;
+export default RouteMap;

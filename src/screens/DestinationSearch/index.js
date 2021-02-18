@@ -32,7 +32,7 @@ const DestinationSearch = (props) => {
 						}}
 						styles={{
 							textInput: styles.textInput,
-							container: styles.containerTwo,
+							container: styles.inputOne,
 							listView: styles.listView,
 							row: styles.row,
 							description: styles.description,
@@ -59,7 +59,7 @@ const DestinationSearch = (props) => {
 					}}
 					styles={{
 						textInput: styles.textInput,
-						container: styles.containerTwo,
+						container: styles.inputTwo,
 						listView: styles.listView,
 						row: styles.row,
 						description: styles.description,
