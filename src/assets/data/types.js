@@ -2,14 +2,14 @@ export default [
   {
     id: '0',
     type: 'YaphiX',
-	capacity: 4,
+	capacity: 3,
     price: 22,
     duration: 45,
   },
   {
     id: '1',
     type: 'Comfort',
-	capacity: 3,
+	capacity: 2,
     price: 64,
     duration: 30,
   },

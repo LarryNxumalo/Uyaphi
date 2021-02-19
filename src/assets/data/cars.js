@@ -15,14 +15,14 @@ export default [
   },
   {
     id: '2',
-    type: 'YaphiXL',
+    type: 'SquadXL',
     latitude: 28.456208,
     longitude: -16.259098,
     heading: 250,
   },
   {
     id: '3',
-    type: 'Comfort',
+    type: 'Magheza',
     latitude: 28.454812,
     longitude: -16.258658,
     heading: 30,
