@@ -13,9 +13,9 @@ const RouteMap = (props) => {
 			return require('../../assets/images/top-Comfort.png')
 		}
 		if ( type === 'Magheza'){
-			return require('../../assets/images/Magheza.jpg')
+			return require('../../assets/images/top-UberXL.png')
 		}
-		return require('../../assets/images/top-UberXL.png')
+		return require('../../assets/images/Magheza.jpg')
 	}
 
 

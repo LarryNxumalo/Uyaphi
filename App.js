@@ -17,8 +17,8 @@ const App: () => React$Node = () => {
     <>
       <StatusBar barStyle="dark-content" />
      {/* <DestinationSearch/> */}
-     <SearchResults/>
-     {/* <HomeScreen/> */}
+     {/* <SearchResults/> */}
+     <HomeScreen/>
     </>
   );
 };
