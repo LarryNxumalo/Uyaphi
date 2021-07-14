@@ -11,7 +11,7 @@ const SearchResults = (props) => {
 			<View style={{ height: Dimensions.get('window').height - 500}}>
 				<RouteMap/>
 			</View>
-			<View style={{ height: 500, backgroundColor: 'red'}}>
+			<View style={{ height: 500, backgroundColor: 'black'}}>
 				<UyaphiTypes/>
 			</View>
         </View>

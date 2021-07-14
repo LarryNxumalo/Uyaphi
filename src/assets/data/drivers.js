@@ -2,29 +2,31 @@ export default [
   {
     id: '0',
     type: 'YaphiX',
-    latitude: 28.450627,
-    longitude: -16.263045,
-    heading: 130,
+    latitude: -25.965745, 
+    longitude: 28.026971, 
+    heading: 90,
   },
   {
     id: '1',
     type: 'Comfort',
-    latitude: 28.456312,
-    longitude: -16.252929,
-    heading: 0,
+    latitude: -25.965909,
+    longitude:  28.023506 ,
+    heading: 190,
   },
   {
     id: '2',
     type: 'SquadXL',
     latitude: 28.456208,
     longitude: -16.259098,
-    heading: 250,
+    heading: 99,
   },
   {
     id: '3',
     type: 'Magheza',
     latitude: 28.454812,
     longitude: -16.258658,
-    heading: 30,
+    heading: 120,
   },
 ];
+
+-25.964578, 28.028494
