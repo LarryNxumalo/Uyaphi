@@ -9,31 +9,14 @@ const GOOGLE_MAPS_APIKEY = 'AIzaSyDcCNaSv-pSO8INeCeHKj68u4Hs_uuQs28';
 const RouteMap = ({ origin, destination }) => {
 
   const originLoc = {
-    latitude: origin.details.geometry.location.lat,
-    longitude: origin.details.geometry.location.lng,
+    latitude: -25.964578,
+    longitude: 28.028494 ,
   };
 
   const destinationLoc = {
-    latitude: destination.details.geometry.location.lat,
-    longitude: destination.details.geometry.location.lng,
+    latitude: -25.9735204,
+    longitude: 28.0363615,
   };
-
-
-// const RouteMap = (props) => {
-
-	// const getImage = (type) => {
-	// 	if ( type === 'YaphiX'){
-	// 		return require('../../assets/images/top-UberX.png')
-	// 	}
-	// 	if ( type === 'Comfort'){
-	// 		return require('../../assets/images/top-Comfort.png')
-	// 	}
-	// 	if ( type === 'Magheza'){
-	// 		return require('../../assets/images/top-UberXL.png')
-	// 	}
-	// 	return require('../../assets/images/Magheza.jpg')
-	// }
-
 
     return (
             <MapView
@@ -41,8 +24,8 @@ const RouteMap = ({ origin, destination }) => {
 				provider={PROVIDER_GOOGLE}
 				showsUserLocation={true}
 				initialRegion={{
-					latitude: 28.450627,
-    				longitude: -16.263045,
+					latitude: -25.965909,
+    				longitude: 28.023506 ,
 					latitudeDelta: 0.0922,
 					longitudeDelta: 0.0921,
 				}}>
@@ -54,11 +37,11 @@ const RouteMap = ({ origin, destination }) => {
 					strokeColor="black"
 				/>
 				<Marker
-					coordinate={origin}
+					coordinate={originLoc}
 					title={'Origin'}
 				/>
 				<Marker
-					coordinate={destination}
+					coordinate={destinationLoc}
 					title={"Destination"}
 				/>
 			</MapView>

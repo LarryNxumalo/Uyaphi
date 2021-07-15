@@ -4,6 +4,7 @@ import styles from './styles.js'
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 import LinearGradient from 'react-native-linear-gradient';
 import PlaceRow from "./PlaceRow.js";
+import { useNavigation } from "@react-navigation/native"
 
 //Predefined locations
 const homePlace = {
@@ -21,10 +22,15 @@ const DestinationSearch = (props) => {
 	const [originPlace, setOriginPlace] = useState(null);
 	const [destinationPlace, setDestinationPlace] = useState(null);
 
+	const navigation = useNavigation();
+
 	useEffect(() => {
 		console.warn('useEffect is called from destination');//useEffect is loaded
 		if(originPlace && destinationPlace){
-			console.warn('redirect to trip results');//here we're implementing the navigation
+			navigation.navigate("SearchResults", {
+				originPlace,
+				destinationPlace,
+			})
 		}
 	}, [originPlace, destinationPlace]);
 
