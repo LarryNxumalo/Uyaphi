@@ -6,8 +6,9 @@ import styles from './styles'
 const CovidMessage = (props) => {
     return (
         <View  style={styles.container}>
-            <Text style={styles.title}>Travel only if neccesary</Text>
-            <Text style={styles.text}>Wear your mask and sanitize at all times, Our drivers also have sanitizers to help reduce the spread of COVID-19.</Text>
+
+            <Text style={styles.title}>Travel only if neccesary, COVID-19 is real</Text>
+            <Text style={styles.text}>Stay safe and wear a mask, wash your hands and Sanitize to prevent the spread of the virus</Text>
             <Text style={styles.learnMore}>Learn more</Text>
         </View>
     );

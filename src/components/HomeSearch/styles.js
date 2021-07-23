@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#323232',
 		color: '#fff',
         margin: 10,
-        borderRadius: 10,
+        borderRadius: 27,
         padding: 10,
         display: 'flex',
         flexDirection: 'row',
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         width: 100,
         padding: 10,
-        backgroundColor: '#07070A',
+        backgroundColor: '#FAC501',
         borderRadius: 50,
     },
     row: {
@@ -39,8 +39,6 @@ const styles = StyleSheet.create({
         padding: 20,
         borderTopWidth: 1,
         borderColor: '#323232',
-
-		// backgroundColor: '#323232',
     },
     iconContainer: {
         backgroundColor: '#323232',
