@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-uyaphi-dev-231357-authRole",
+      "UnauthRoleArn": "arn:aws:iam::435824734623:role/amplify-uyaphi-dev-231357-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::435824734623:role/amplify-uyaphi-dev-231357-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-uyaphi-dev-231357-deployment",
+      "UnauthRoleName": "amplify-uyaphi-dev-231357-unauthRole",
+      "StackName": "amplify-uyaphi-dev-231357",
+      "StackId": "arn:aws:cloudformation:us-east-1:435824734623:stack/amplify-uyaphi-dev-231357/8c539630-01fb-11ec-bea9-0e508885cec5",
+      "AmplifyAppId": "d22c8ynf7simmz"
+    },
+    "categories": {
+      "function": {
+        "uyaphi0691cf330691cf33PostConfirmation": {
+          "deploymentBucketName": "amplify-uyaphi-dev-231357-deployment",
+          "s3Key": "amplify-builds/uyaphi0691cf330691cf33PostConfirmation-6f67764c73704b377546-build.zip"
+        }
+      },
+      "auth": {
+        "uyaphi1fc75aee": {}
+      }
+    }
+  }
+}

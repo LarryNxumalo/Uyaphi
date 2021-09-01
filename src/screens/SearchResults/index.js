@@ -9,12 +9,14 @@ import { useRoute } from '@react-navigation/native'
 
 const SearchResults = (props) => {
 	const route = useRoute();
-	console.log(route.params.originPlace.data.name)
+	console.log(route.params)
 	console.log('props props')
+	const {originPlace, destinationPlace } = route.params
+
     return (
         <View style={styles.container}>
 			<View style={{ height: Dimensions.get('window').height - 500}}>
-				<RouteMap/>
+				<RouteMap origin={originPlace} destination={destinationPlace}/>
 			</View>
 			<View style={{ height: 500, backgroundColor: 'black'}}>
 				<UyaphiTypes/>

@@ -15,15 +15,19 @@ const HomeSearch = (props) => {
 		navigation.navigate("DestinationSearch")
 	}
 	
+	const sideDrawer = () => {
+		navigation.openDrawer();
+	}
+	
     return (
         <View style={styles.mainBox}>
             <Pressable onPress={goToSearch} style={styles.inputBox}>
                 <Text style={styles.inputText} >Uyaphi?</Text>
-                <View style={styles.timeContainer}>
+                <Pressable onPress={sideDrawer} style={styles.timeContainer}>
                     <AntDesign name={'clockcircle'} size={16} color={'#fff'}/>
                     <Text style={styles.text}>Now</Text>
                     <MaterialIcons name={'keyboard-arrow-down'} size={16}/>
-                </View>
+                </Pressable>
             </Pressable>
             <View style={styles.row}>
                 <View style={styles.iconContainer}>
