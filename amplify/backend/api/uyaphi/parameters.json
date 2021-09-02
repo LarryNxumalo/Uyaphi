@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "uyaphi",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authuyaphi1fc75aee",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

@@ -10,15 +10,16 @@ import React, {useEffect} from 'react';
 import { StatusBar, PermissionsAndroid, Platform } from 'react-native';
 import Geolocation from '@react-native-community/geolocation';
 import Router from './src/Navigation/Root';
-// import SearchResults from './src/screens/SearchResults';
-// import HomeScreen from './src/screens/HomeScreen';
-// import LoginScreen from './src/screens/LoginScreen';
+import { withAuthenticator } from 'aws-amplify-react-native';
 
 navigator.geolocation = require('@react-native-community/geolocation');
 
+import Amplify from 'aws-amplify'
+import config from './src/aws-exports'
+Amplify.configure(config)
+
 
 const App: () => React$Node = () => {
-
 
 	const androidPermission = async () => {
 		try {
@@ -56,15 +57,9 @@ const App: () => React$Node = () => {
 	return (
 	<>
 		<StatusBar barStyle="dark-content" />
-
 		<Router/>
-		{/* <HomeScreen/> */}
-		{/* <DestinationSearch/> */}
-		{/* <SearchResults/> */}
-		
-
 	</>
 	);
 };
 
-export default App;
+export default withAuthenticator(App);

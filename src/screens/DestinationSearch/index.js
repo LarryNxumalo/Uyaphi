@@ -6,6 +6,8 @@ import LinearGradient from 'react-native-linear-gradient';
 import PlaceRow from "./PlaceRow.js";
 import { useNavigation } from "@react-navigation/native"
 
+const GOOGLE_MAPS_APIKEY = 'AIzaSyCgL119eAii-qoLTgkc7JTwIMygLWRt-2E';
+
 //Predefined locations
 const homePlace = {
 	description: 'Home',
@@ -64,7 +66,7 @@ const DestinationSearch = (props) => {
 						}}
 						fetchDetails
 						query={{
-							key: 'AIzaSyDcCNaSv-pSO8INeCeHKj68u4Hs_uuQs28',
+							key: GOOGLE_MAPS_APIKEY,
 							language: 'en',
 							radius: '15000', //15km
 							components:'country:za',
@@ -100,7 +102,7 @@ const DestinationSearch = (props) => {
 					}}
 					fetchDetails
 					query={{
-						key: 'AIzaSyDcCNaSv-pSO8INeCeHKj68u4Hs_uuQs28',
+						key: GOOGLE_MAPS_APIKEY,
 						language: 'en',
 					}}
 					renderRow={(data) => <PlaceRow data={data} />}
