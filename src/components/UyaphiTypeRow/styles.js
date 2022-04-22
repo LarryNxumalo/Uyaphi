@@ -3,11 +3,11 @@ import {StyleSheet} from "react-native"
 const styles = StyleSheet.create({
 	container: {
 		backgroundColor:"#fff",
-		height: 95,
+		height: 70,
 		width: "100%",
 		// alignSelf: "center",
-		borderRadius: 27,
-		marginBottom: 5,
+		borderRadius: 23,
+		marginBottom: 18,
 		// borderWidth: 1,
 		// borderColor: "#ddd",
 		flexDirection: "row",
@@ -15,11 +15,16 @@ const styles = StyleSheet.create({
 		alignItems: "center",
 		paddingLeft: 20,
 		paddingRight: 20,
+		paddingTop: 12,
+
 	},
 	image: {
-		width: 80,
-		height: 70,
+		width: 120,
+		height: 110,
 		resizeMode: "contain",
+		position: "absolute",
+		top: -38,
+		left: 150,
 	},
 	middleContainer: {
 		flex: 1,
@@ -44,7 +49,7 @@ const styles = StyleSheet.create({
 		justifyContent: 'flex-end'
 	},
 	price:{
-		fontSize: 18,
+		fontSize: 17,
 		marginLeft: 5,
 		fontWeight: "500"
 	}

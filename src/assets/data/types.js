@@ -23,7 +23,7 @@ export default [
   {
     id: '3',
 	capacity: 15,
-    type: 'Magheza',
+    type: 'FastFast',
     price: 206,
     duration: 27,
   },

@@ -27,7 +27,7 @@ exports.handler = async (event, context) => {
 
 	try {
 		await ddb.putItem(params).promise();
-		console.log('Success')
+		console.log('Successfully added user to DynamoDB chief');
 	} catch (e) {
 		console.log("Error", e);
 	}

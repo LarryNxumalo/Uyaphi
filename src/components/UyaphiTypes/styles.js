@@ -1,7 +1,8 @@
-import {StyleSheet} from "react-native";
+import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
 	container: {
+		backgroundColor:"#000",
 		paddingTop: 20,
 		height:"100%",
 		borderTopLeftRadius: 27,
@@ -10,7 +11,6 @@ const styles = StyleSheet.create({
 		// position: "absolute",
 		top: 0,
 		width: "100%",
-
 	}
 })
 

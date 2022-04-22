@@ -15,12 +15,15 @@ const SearchResults = (props) => {
 
     return (
         <View style={styles.container}>
+
 			<View style={{ height: Dimensions.get('window').height - 500}}>
 				<RouteMap origin={originPlace} destination={destinationPlace}/>
 			</View>
+
 			<View style={{ height: 500, backgroundColor: 'black'}}>
 				<UyaphiTypes/>
 			</View>
+			
         </View>
     );
 };

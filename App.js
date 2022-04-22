@@ -47,6 +47,7 @@ const App: () => React$Node = () => {
 
 	useEffect(() => {
 		if(Platform.OS === 'android'){
+			//Android
 			androidPermission();
 		} else {
 			//IOS

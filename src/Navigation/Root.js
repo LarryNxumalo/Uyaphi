@@ -17,7 +17,7 @@ const DummyScreen = (props) => (
 		style={{
 			flex: 1, justifyContent: 'center', 
 			alignItems: 'center', 
-			backgroundColor: '#0D0266'
+			backgroundColor: '#F93A00'
 		}}>
 		<Text style={{color: 'white', fontSize: 50, fontWeight: '900'}}>
 			{props.name}
