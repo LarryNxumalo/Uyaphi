@@ -29,6 +29,7 @@ const DestinationSearch = (props) => {
 	useEffect(() => {
 		console.warn('useEffect is called from destination');//useEffect is loaded
 		if(originPlace && destinationPlace){
+			console.log(originPlace);
 			navigation.navigate("SearchResults", {
 				originPlace,
 				destinationPlace,
@@ -39,7 +40,7 @@ const DestinationSearch = (props) => {
 
     return (
         <SafeAreaView >
-            <LinearGradient start={{x: 0, y: 2}} end={{x: 0, y: 0}} colors={['#282828', '#282828']} style={styles.container}>
+            <View  style={styles.container}>
 				<GooglePlacesAutocomplete
 						disableScroll={false}
 						placeholder='Where from'
@@ -79,16 +80,16 @@ const DestinationSearch = (props) => {
 					<View style={styles.circle}/>
 					<View style={styles.line}/>
 					<View style={styles.square}/>
-						
 
 				<GooglePlacesAutocomplete
-					placeholder='Where to'
+					placeholder="Where to"
 					onPress={(data, details = null) => {
 						// 'details' is provided when fetchDetails = true
 						setDestinationPlace({data, details});
 						console.log(data, details);
 					}}
 					styles={{
+						placeholder: {color: '#fff'},
 						textInput: styles.textInput,
 						container: styles.inputTwo,
 						listView: styles.listView,
@@ -108,7 +109,7 @@ const DestinationSearch = (props) => {
 					renderRow={(data) => <PlaceRow data={data} />}
 					predefinedPlaces={[homePlace, workPlace]}
 				/>
-            </LinearGradient>
+            </View>
         </SafeAreaView>
 
     );
